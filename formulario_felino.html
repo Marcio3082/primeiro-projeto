@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário Felino.</title>
+    <meta charset="UTF-8" />
+    <meta name="autor" content="Marcio Tadeu Valerio" />
+    <meta name="assunto" content="formulário de pesquisa sobre gatos." />
+    <link rel="icon" href="/img/favicon-32x32.png" />
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Formulário Felino.🐱</h1>
+      <nav aria-label="navegação primaria">
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="#fatos">Fatos sobre gatos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="Formulário">
+        <h2>Formulário Felino</h2>
+        <p>
+          Responda essa pesquisa e nos ajude a entender mais sobre esses
+          bichinhos lindos.
+        </p>
+        <p>
+          Se você quiser,pode anexar uma foto do seu gato para fazer parte de
+          nossa galeria.
+        </p>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>
+              <p>
+                Informações sobre seu gato
+                <label for="nomeGato">Qual nome do seu gato?</label>
+                <input
+                  type="text"
+                  name="nomeGato"
+                  id="nomeGato"
+                  placeholder="Garfild"
+                  autocomplete="on"
+                  required
+                  autofocus
+                />
+              </p>
+              <label for="idadeGato">Quantos gatos você tem?</label>
+              <input
+                type="number"
+                name="idadeGato"
+                id="idadeGato"
+                min="1"
+                max="40"
+                step="1"
+                value="1"
+                required/>
+              
+              <p>Seu gato(s)fica dentro de casa ou tem acesso á rua?
+                /p>
+              <p>
+                <input type="radio" name="casaRua" id="casa" value="casa" />
+                <label for="casa">Fica em casa</label>
+              </p>
+              <p>
+                <input type="radio" name="casaRua" id="rua" value="rua" />
+                <label for="rua">Sai pra rua</label>
+              </p>
+
+
+              <p>Como é a personalidade do seu gato?
+
+              </p>
+              <p><input type="checkbox" name="personalidade" id="manhoso" />
+                <label for="manhoso">Manhoso</label>
+            </p>
+              </p>
+              <p><input type="checkbox" name="personalidade" id="Preguiçoso" />
+                <label for="Preguiçoso">Preguiçoso</label>
+            </p>
+              </p>
+              <p><input type="checkbox" name="personalidade" id="espoleta" />
+                <label for="espoleta">Espoleta</label>
+            </p>
+              </p>
+              <p><input type="checkbox" name="personalidade" id="desconfiado" />
+                <label for="desconfiado">Desconfiado</label>
+            </p>
+            <fieldset>
+                <legend>Seu gato na nossa galeria</legend>
+                <p>Anexe uma foto para nossa equipe adicionar na galeria.</p>
+                <input type="file" name="anexoFoto" id="anexoFoto">
+                <p>
+                    <label for="mensagem">Legenda da foto</label>
+                </p>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"placeholder="Insira a legenda da sua foto aqui"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+             <button type="reset">Redefinir</button>
+              
+                
+            
+            </legend>
+          </fieldset>
+        </form>
+      </article>
+      <hr />
+      <p> <a href="/formulario_felino.html">Voltar ao Topo</a></p>
+    </main>
+    <footer>
+      <p>&Lt; &copy; Copyright App Meu Gatinho Fofinho &gt;</p>
+    </footer>
+  </body>
+</html>
